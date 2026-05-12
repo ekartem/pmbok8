@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>PMBOK 8 for Busy PMs</title>
+<style>
+*{box-sizing:border-box}
+body{max-width:780px;margin:0 auto;padding:48px 24px 80px;font-family:Georgia,'Iowan Old Style','Times New Roman',serif;color:#1a1a1a;line-height:1.65;font-size:17px;background:#fafaf9}
+.ey{font-family:sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#92400e;font-weight:700;margin-bottom:16px}
+h1{font-size:42px;line-height:1.12;margin:0 0 14px;font-weight:700;letter-spacing:-.015em}
+.sub{font-size:19px;color:#44403c;margin:0 0 12px;font-style:italic;line-height:1.4}
+.meta{background:#fefce8;border-left:3px solid #b45309;padding:18px 22px;margin:28px 0 28px;font-family:sans-serif;font-size:14px;color:#44403c;line-height:1.55}
+.meta strong{color:#1a1a1a}
+.audio-player{background:#1a1a1a;color:#fff;border-radius:6px;padding:18px 20px;margin:0 0 36px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;position:sticky;top:0;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.audio-player .now-playing{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#fbbf24;font-weight:700;margin-bottom:8px;min-height:18px}
+.audio-player .track-title{color:#fbbf24}
+.audio-player audio{width:100%;height:38px;display:block}
+.audio-player .controls{display:flex;align-items:center;gap:14px;margin-top:10px;flex-wrap:wrap;font-size:13px}
+.autoplay-toggle{display:flex;align-items:center;gap:8px;color:#e7e5e4;cursor:pointer;user-select:none}
+.autoplay-toggle input{width:16px;height:16px;cursor:pointer;accent-color:#fbbf24}
+.controls .stop-btn{background:#2a2a2a;color:#fbbf24;border:1px solid #404040;border-radius:3px;padding:6px 12px;cursor:pointer;font-family:inherit;font-size:12px;font-weight:600}
+.controls .stop-btn:hover{background:#404040}
+.mod{margin:0 0 40px}
+.mod h2{font-family:sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#92400e;font-weight:700;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid #e7e5e4}
+.lesson-row{display:flex;align-items:stretch;gap:10px;margin:8px 0}
+.card{flex:1;display:flex;align-items:baseline;gap:14px;padding:14px 18px;background:#fff;border:1px solid #e7e5e4;border-left:3px solid #b45309;border-radius:3px;text-decoration:none;color:inherit;transition:background .15s,transform .1s,border-left-color .15s}
+.card:hover{background:#fefce8;transform:translateX(3px)}
+.card.playing{background:#fef3c7;border-left-color:#1a1a1a;border-left-width:5px}
+.cnum{font-family:sans-serif;font-size:12px;letter-spacing:.12em;color:#92400e;font-weight:700;min-width:28px}
+.ctitle{font-family:sans-serif;font-size:16px;font-weight:600}
+.ctime{font-family:sans-serif;font-size:12px;color:#78716c;margin-left:auto;white-space:nowrap}
+.play-btn{flex-shrink:0;width:44px;background:#fef3c7;color:#92400e;border:1px solid #b45309;border-radius:3px;cursor:pointer;font-size:14px;font-family:sans-serif;padding:0;transition:background .15s,color .15s,transform .1s}
+.play-btn:hover{background:#b45309;color:#fff;transform:scale(1.05)}
+.play-btn.playing{background:#1a1a1a;color:#fbbf24;border-color:#1a1a1a}
+.play-spacer{flex-shrink:0;width:44px}
+footer{margin-top:64px;padding-top:24px;border-top:2px solid #1a1a1a;font-family:sans-serif;font-size:13px;color:#57534e;line-height:1.6}
+footer p{margin:0 0 10px}
+@media(max-width:600px){body{padding:32px 16px 80px}h1{font-size:30px}.audio-player{padding:14px 16px}.ctitle{font-size:15px}.play-btn,.play-spacer{width:40px}}
+</style></head><body>
+
+<div class="ey">Self-paced course · 17 lessons + final assessment</div>
+<h1>PMBOK 8 for Busy PMs</h1>
+<p class="sub">A comprehensive primer for project managers catching up from PMBOK 6 to PMBOK 8 (2025).</p>
+
+<div class="meta"><strong>About 3 hours total.</strong> Each lesson has an interactive quiz. Tap ▶ to play its narration; turn on Auto-play to listen straight through.</div>
+
+<div class="audio-player">
+  <div class="now-playing"><span class="track-title">▶ Tap a lesson below to start listening</span></div>
+  <audio id="player" preload="none" controls></audio>
+  <div class="controls">
+    <label class="autoplay-toggle">
+      <input type="checkbox" id="autoplay" />
+      <span>Auto-play next lesson</span>
+    </label>
+    <button type="button" class="stop-btn" id="stopBtn">⏹ Stop</button>
+  </div>
+</div>
+
+<div class="mod"><h2>Module 1 — Why PMBOK 8</h2><div class="lesson-row"><a class="card" href="01_why_pmbok8.html"><span class="cnum">1.1</span><span class="ctitle">Why PMBOK 8</span><span class="ctime">10 min</span></a><button class="play-btn" type="button" data-index="0" aria-label="Play narration for lesson 1.1">▶</button></div></div><div class="mod"><h2>Module 2 — Mindset and Principles</h2><div class="lesson-row"><a class="card" href="02_mindset.html"><span class="cnum">2.1</span><span class="ctitle">The PMBOK 8 mindset</span><span class="ctime">12 min</span></a><button class="play-btn" type="button" data-index="1" aria-label="Play narration for lesson 2.1">▶</button></div><div class="lesson-row"><a class="card" href="03_principles.html"><span class="cnum">2.2</span><span class="ctitle">The six principles</span><span class="ctime">14 min</span></a><button class="play-btn" type="button" data-index="2" aria-label="Play narration for lesson 2.2">▶</button></div></div><div class="mod"><h2>Module 3 — Performance Domains</h2><div class="lesson-row"><a class="card" href="04_governance.html"><span class="cnum">3.1</span><span class="ctitle">Governance</span><span class="ctime">12 min</span></a><button class="play-btn" type="button" data-index="3" aria-label="Play narration for lesson 3.1">▶</button></div><div class="lesson-row"><a class="card" href="05_scope.html"><span class="cnum">3.2</span><span class="ctitle">Scope</span><span class="ctime">10 min</span></a><button class="play-btn" type="button" data-index="4" aria-label="Play narration for lesson 3.2">▶</button></div><div class="lesson-row"><a class="card" href="06_schedule.html"><span class="cnum">3.3</span><span class="ctitle">Schedule</span><span class="ctime">11 min</span></a><button class="play-btn" type="button" data-index="5" aria-label="Play narration for lesson 3.3">▶</button></div><div class="lesson-row"><a class="card" href="07_finance.html"><span class="cnum">3.4</span><span class="ctitle">Finance</span><span class="ctime">11 min</span></a><button class="play-btn" type="button" data-index="6" aria-label="Play narration for lesson 3.4">▶</button></div><div class="lesson-row"><a class="card" href="08_stakeholders.html"><span class="cnum">3.5</span><span class="ctitle">Stakeholders</span><span class="ctime">11 min</span></a><button class="play-btn" type="button" data-index="7" aria-label="Play narration for lesson 3.5">▶</button></div><div class="lesson-row"><a class="card" href="09_resources.html"><span class="cnum">3.6</span><span class="ctitle">Resources</span><span class="ctime">10 min</span></a><button class="play-btn" type="button" data-index="8" aria-label="Play narration for lesson 3.6">▶</button></div><div class="lesson-row"><a class="card" href="10_risk.html"><span class="cnum">3.7</span><span class="ctitle">Risk</span><span class="ctime">11 min</span></a><button class="play-btn" type="button" data-index="9" aria-label="Play narration for lesson 3.7">▶</button></div></div><div class="mod"><h2>Module 4 — The Mechanics</h2><div class="lesson-row"><a class="card" href="11_focus_areas.html"><span class="cnum">4.1</span><span class="ctitle">Focus Areas</span><span class="ctime">9 min</span></a><button class="play-btn" type="button" data-index="10" aria-label="Play narration for lesson 4.1">▶</button></div><div class="lesson-row"><a class="card" href="12_processes.html"><span class="cnum">4.2</span><span class="ctitle">The 40 processes</span><span class="ctime">11 min</span></a><button class="play-btn" type="button" data-index="11" aria-label="Play narration for lesson 4.2">▶</button></div><div class="lesson-row"><a class="card" href="13_tailoring.html"><span class="cnum">4.3</span><span class="ctitle">Tailoring</span><span class="ctime">11 min</span></a><button class="play-btn" type="button" data-index="12" aria-label="Play narration for lesson 4.3">▶</button></div></div><div class="mod"><h2>Module 5 — Reference</h2><div class="lesson-row"><a class="card" href="15_value_delivery.html"><span class="cnum">5.1</span><span class="ctitle">Value Delivery System</span><span class="ctime">10 min</span></a><button class="play-btn" type="button" data-index="13" aria-label="Play narration for lesson 5.1">▶</button></div><div class="lesson-row"><a class="card" href="16_life_cycles.html"><span class="cnum">5.2</span><span class="ctitle">Approaches & Life Cycles</span><span class="ctime">11 min</span></a><button class="play-btn" type="button" data-index="14" aria-label="Play narration for lesson 5.2">▶</button></div><div class="lesson-row"><a class="card" href="17_toolbox.html"><span class="cnum">5.3</span><span class="ctitle">The Toolbox: Inputs, Outputs & Techniques</span><span class="ctime">10 min</span></a><button class="play-btn" type="button" data-index="15" aria-label="Play narration for lesson 5.3">▶</button></div></div><div class="mod"><h2>Module 6 — Apply It</h2><div class="lesson-row"><a class="card" href="14_capstone.html"><span class="cnum">6.1</span><span class="ctitle">Capstone</span><span class="ctime">15 min</span></a><button class="play-btn" type="button" data-index="16" aria-label="Play narration for lesson 6.1">▶</button></div></div><div class="mod"><h2>Final Assessment</h2><div class="lesson-row"><a class="card" href="18_final_quiz.html"><span class="cnum">★</span><span class="ctitle">Comprehensive Quiz — 20 questions</span><span class="ctime">15 min</span></a><span class="play-spacer"></span></div></div>
+
+<footer><p><strong>About this course.</strong> All "From the Standard" excerpts are paraphrased from PMBOK 8 with section attribution. Narrations are intended to be generated via Google AI Studio or another TTS tool — see narrations.txt for scripts and expected filenames.</p>
+<p>For the live standard, refer to your PMI member access at pmi.org.</p></footer>
+
+<script>
+(function(){
+  var tracks = [{"audio": "01_why_pmbok8.wav", "title": "1.1 \u00b7 Why PMBOK 8", "page": "01_why_pmbok8.html"}, {"audio": "02_mindset.wav", "title": "2.1 \u00b7 The PMBOK 8 mindset", "page": "02_mindset.html"}, {"audio": "03_principles.wav", "title": "2.2 \u00b7 The six principles", "page": "03_principles.html"}, {"audio": "04_governance.wav", "title": "3.1 \u00b7 Governance", "page": "04_governance.html"}, {"audio": "05_scope.wav", "title": "3.2 \u00b7 Scope", "page": "05_scope.html"}, {"audio": "06_schedule.wav", "title": "3.3 \u00b7 Schedule", "page": "06_schedule.html"}, {"audio": "07_finance.wav", "title": "3.4 \u00b7 Finance", "page": "07_finance.html"}, {"audio": "08_stakeholders.wav", "title": "3.5 \u00b7 Stakeholders", "page": "08_stakeholders.html"}, {"audio": "09_resources.wav", "title": "3.6 \u00b7 Resources", "page": "09_resources.html"}, {"audio": "10_risk.wav", "title": "3.7 \u00b7 Risk", "page": "10_risk.html"}, {"audio": "11_focus_areas.wav", "title": "4.1 \u00b7 Focus Areas", "page": "11_focus_areas.html"}, {"audio": "12_processes.wav", "title": "4.2 \u00b7 The 40 processes", "page": "12_processes.html"}, {"audio": "13_tailoring.wav", "title": "4.3 \u00b7 Tailoring", "page": "13_tailoring.html"}, {"audio": "14_value_delivery.wav", "title": "5.1 \u00b7 Value Delivery System", "page": "15_value_delivery.html"}, {"audio": "15_life_cycles.wav", "title": "5.2 \u00b7 Approaches & Life Cycles", "page": "16_life_cycles.html"}, {"audio": "16_toolbox.wav", "title": "5.3 \u00b7 The Toolbox: Inputs, Outputs & Techniques", "page": "17_toolbox.html"}, {"audio": "17_capstone.wav", "title": "6.1 \u00b7 Capstone", "page": "14_capstone.html"}];
+  var player = document.getElementById('player');
+  var autoplay = document.getElementById('autoplay');
+  var stopBtn = document.getElementById('stopBtn');
+  var trackTitle = document.querySelector('.track-title');
+  var currentIndex = -1;
+  
+  function clearPlayingState(){
+    document.querySelectorAll('.card.playing').forEach(function(c){c.classList.remove('playing');});
+    document.querySelectorAll('.play-btn.playing').forEach(function(b){b.classList.remove('playing');b.textContent='▶';});
+  }
+  
+  function markPlaying(index){
+    clearPlayingState();
+    var btn = document.querySelector('.play-btn[data-index="'+index+'"]');
+    if(btn){
+      btn.classList.add('playing');
+      btn.textContent='♪';
+      var row = btn.closest('.lesson-row');
+      var card = row ? row.querySelector('.card') : null;
+      if(card) card.classList.add('playing');
+    }
+  }
+  
+  function playTrack(index){
+    if(index < 0 || index >= tracks.length){
+      trackTitle.textContent = '▶ Tap a lesson below to start listening';
+      clearPlayingState();
+      currentIndex = -1;
+      return;
+    }
+    currentIndex = index;
+    player.src = tracks[index].audio;
+    player.play().catch(function(err){
+      trackTitle.textContent = 'Audio file not found: ' + tracks[index].audio;
+      console.error('Playback error:', err);
+    });
+    trackTitle.textContent = 'Now playing: ' + tracks[index].title;
+    markPlaying(index);
+  }
+  
+  document.querySelectorAll('.play-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var idx = parseInt(btn.dataset.index);
+      if(idx === currentIndex && !player.paused){player.pause();return;}
+      if(idx === currentIndex && player.paused && player.src){player.play();return;}
+      playTrack(idx);
+    });
+  });
+  
+  player.addEventListener('ended', function(){
+    if(autoplay.checked){
+      playTrack(currentIndex + 1);
+    } else {
+      var finishedTitle = currentIndex >= 0 ? tracks[currentIndex].title : '';
+      clearPlayingState();
+      trackTitle.textContent = 'Finished: ' + finishedTitle + ' — turn on Auto-play to continue';
+      currentIndex = -1;
+    }
+  });
+  
+  player.addEventListener('pause', function(){
+    var btn = document.querySelector('.play-btn[data-index="'+currentIndex+'"]');
+    if(btn && !player.ended) btn.textContent = '▶';
+  });
+  
+  player.addEventListener('play', function(){
+    var btn = document.querySelector('.play-btn[data-index="'+currentIndex+'"]');
+    if(btn) btn.textContent = '♪';
+  });
+  
+  stopBtn.addEventListener('click', function(){
+    player.pause();
+    player.currentTime = 0;
+    clearPlayingState();
+    trackTitle.textContent = '▶ Tap a lesson below to start listening';
+    currentIndex = -1;
+  });
+})();
+</script>
+
+</body></html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>4.2 The 40 processes — PMBOK 8 Course</title>
+<style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{max-width:820px;margin:0 auto;padding:32px 24px 80px;font-family:Georgia,'Iowan Old Style','Times New Roman',serif;color:#1a1a1a;line-height:1.65;font-size:17px;background:#fafaf9}
+.top-bar{display:flex;justify-content:space-between;align-items:center;padding:12px 0 24px;border-bottom:1px solid #e7e5e4;margin-bottom:28px;font-family:sans-serif;font-size:13px}.top-bar a{color:#b45309;text-decoration:none;font-weight:600}.top-bar a:hover{color:#92400e;text-decoration:underline}.top-bar .pos{color:#78716c}
+.tts-bar{display:flex;align-items:center;gap:10px;padding:12px 16px;margin:0 0 24px;background:#1a1a1a;border-radius:4px;font-family:sans-serif;font-size:13px}
+.tts-bar button{background:#2a2a2a;color:#fbbf24;border:1px solid #404040;border-radius:3px;padding:8px 14px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;transition:background .15s}.tts-bar button:hover{background:#404040}
+.tts-bar select{background:#2a2a2a;color:#e7e5e4;border:1px solid #404040;border-radius:3px;padding:6px 8px;font-family:inherit;font-size:12px}
+.tts-bar .tts-label{color:#a8a29e;font-size:12px}
+.bot-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:40px 0 0;padding:24px 0 0;border-top:2px solid #1a1a1a;font-family:sans-serif;font-size:14px}.bot-nav a{display:block;padding:14px 18px;background:#fff;border:1px solid #e7e5e4;border-radius:4px;text-decoration:none;color:#1a1a1a;transition:background .15s,border-color .15s}.bot-nav a:hover{background:#fefce8;border-color:#b45309}.bot-nav .dir{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#92400e;font-weight:700;margin-bottom:4px}.bot-nav .lbl{font-weight:600}.bot-nav .next{text-align:right}
+.quiz-block{background:#1a1a1a;color:#fff;border-radius:4px;padding:32px 28px;margin:48px 0 0;font-family:sans-serif}.quiz-block .qe{color:#fbbf24;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:6px}.quiz-block h3{color:#fff;font-size:20px;margin:0 0 6px;font-weight:700}.quiz-block .qm{color:#a8a29e;font-size:13px;margin:0 0 28px;font-style:italic}
+.qq{border-top:1px solid #404040;padding-top:24px;margin-top:24px}.qq:first-of-type{border-top:none;padding-top:0;margin-top:0}.qp{font-size:16px;margin:0 0 16px;font-weight:500;color:#fff;line-height:1.5}.qo{display:flex;flex-direction:column;gap:8px}.qo button{display:block;width:100%;text-align:left;padding:14px 18px;background:#2a2a2a;color:#e7e5e4;border:1px solid #404040;border-radius:3px;cursor:pointer;font-size:14.5px;font-family:inherit;line-height:1.45;transition:background .15s,border-color .15s}.qo button:hover:not(:disabled){background:#353535;border-color:#525252}.qo button.correct{background:#166534;border-color:#22c55e;color:#fff}.qo button.incorrect{background:#7f1d1d;border-color:#ef4444;color:#fff}.qo button.reveal{background:transparent;border:1px dashed #4ade80;color:#4ade80}.qo button:disabled{cursor:default}.qx{display:none;margin-top:18px;padding:16px 20px;background:#fef3c7;color:#1a1a1a;border-radius:3px;font-size:14.5px;line-height:1.6;border-left:3px solid #fbbf24;font-family:Georgia,serif}.qx.visible{display:block}
+@media(max-width:600px){body{padding:24px 16px 80px}.bot-nav{grid-template-columns:1fr}.quiz-block{padding:24px 18px}.tts-bar{flex-wrap:wrap}}.audio-bar{display:flex;align-items:center;gap:12px;padding:14px 18px;margin:0 0 24px;background:#1a1a1a;border-radius:4px;font-family:sans-serif;font-size:13px}
+.audio-bar audio{flex:1;min-width:0;height:36px}
+.audio-bar .audio-label{color:#fbbf24;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;white-space:nowrap}
+</style></head><body>
+<div class="top-bar"><a href="index.html">← Course home</a><span class="pos">Lesson 4.2 · 11 min</span></div>
+<div class="audio-bar">
+<span class="audio-label">▶ Narration</span>
+<audio controls preload="none" src="12_processes.wav">Your browser does not support audio playback.</audio>
+</div><div class="pmbok-lesson" style="max-width: 740px; margin: 0 auto; font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif; color: #1a1a1a; line-height: 1.65; font-size: 17px;">
+
+
+
+<div class="breadcrumb" style="font-family: sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #92400e; font-weight: 700; margin-bottom: 14px;">Module 4 · Lesson 4.2 · 11 min read</div>
+
+<div class="domain-tag" style="display: inline-block; font-family: sans-serif; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: #ffffff; background: #1a1a1a; padding: 4px 10px; margin-bottom: 14px;">The Mechanics 2 of 3</div>
+
+<h1 style="font-size: 34px; line-height: 1.18; margin: 0 0 28px 0; font-weight: 700;">The 40 processes — the matrix you can actually use</h1>
+
+<div class="why-matters" style="background: #fefce8; border-left: 3px solid #b45309; padding: 22px 26px; margin: 26px 0;">
+  <div class="label" style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; color: #92400e; margin-bottom: 10px; font-family: sans-serif;">Why this matters</div>
+  <p style="margin: 0;">Principles and domains are conceptual scaffolding; processes are where PMBOK 8 becomes operational. The 40 processes are concrete units of work — each with inputs, tools and techniques, and outputs — that a project actually <em>does</em>. PMBOK 7 removed the process catalog and many practitioners missed it: without processes, the framework is high-altitude and hard to apply. PMBOK 8's reintroduction of 40 processes (down from v6's 49) restores the practical bridge between framework and action. The number isn't the point — the existence of named, structured units of work is.</p>
+</div>
+
+<div class="diagram" style="margin: 36px 0; padding: 24px 20px 18px; background: #ffffff; border: 1px solid #e7e5e4; border-radius: 4px;">
+<svg viewBox="0 0 720 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="40 processes mapped across performance domains and focus areas" style="width:100%; height:auto; display:block;">
+  <text x="360" y="26" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" letter-spacing="1.8" fill="#92400e" font-weight="700">40 PROCESSES — BY DOMAIN × FOCUS AREA</text>
+
+  <!-- Column headers -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#1a1a1a" font-weight="700">
+    <text x="200" y="60" text-anchor="middle">Init</text>
+    <text x="280" y="60" text-anchor="middle">Plan</text>
+    <text x="360" y="60" text-anchor="middle">Exec</text>
+    <text x="440" y="60" text-anchor="middle">M&amp;C</text>
+    <text x="520" y="60" text-anchor="middle">Close</text>
+    <text x="610" y="60" text-anchor="middle" font-size="11" fill="#92400e">Total</text>
+  </g>
+
+  <!-- Matrix cells with approximate process counts -->
+  <!-- Row 1: Governance -->
+  <text x="170" y="92" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#1a1a1a">Governance</text>
+  <rect x="160" y="74" width="80" height="36" fill="#fed7aa" stroke="#92400e"/><text x="200" y="98" text-anchor="middle" font-size="13" font-weight="700">1</text>
+  <rect x="240" y="74" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="280" y="98" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="320" y="74" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="360" y="98" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="400" y="74" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="440" y="98" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="480" y="74" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="520" y="98" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="570" y="74" width="80" height="36" fill="#b45309"/><text x="610" y="98" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">9</text>
+
+  <!-- Row 2: Scope -->
+  <text x="170" y="132" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#1a1a1a">Scope</text>
+  <rect x="160" y="114" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="240" y="114" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="280" y="138" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="320" y="114" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="360" y="138" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="400" y="114" width="80" height="36" fill="#fed7aa" stroke="#92400e"/><text x="440" y="138" text-anchor="middle" font-size="13" font-weight="700">1</text>
+  <rect x="480" y="114" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="570" y="114" width="80" height="36" fill="#b45309"/><text x="610" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">5</text>
+
+  <!-- Row 3: Schedule -->
+  <text x="170" y="172" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#1a1a1a">Schedule</text>
+  <rect x="160" y="154" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="240" y="154" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="280" y="178" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="320" y="154" width="80" height="36" fill="#fed7aa" stroke="#92400e"/><text x="360" y="178" text-anchor="middle" font-size="13" font-weight="700">1</text>
+  <rect x="400" y="154" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="440" y="178" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="480" y="154" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="570" y="154" width="80" height="36" fill="#b45309"/><text x="610" y="178" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">5</text>
+
+  <!-- Row 4: Finance -->
+  <text x="170" y="212" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#1a1a1a">Finance</text>
+  <rect x="160" y="194" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="240" y="194" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="280" y="218" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="320" y="194" width="80" height="36" fill="#fed7aa" stroke="#92400e"/><text x="360" y="218" text-anchor="middle" font-size="13" font-weight="700">1</text>
+  <rect x="400" y="194" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="440" y="218" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="480" y="194" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="570" y="194" width="80" height="36" fill="#b45309"/><text x="610" y="218" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">5</text>
+
+  <!-- Row 5: Stakeholders -->
+  <text x="170" y="252" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#1a1a1a">Stakeholders</text>
+  <rect x="160" y="234" width="80" height="36" fill="#fed7aa" stroke="#92400e"/><text x="200" y="258" text-anchor="middle" font-size="13" font-weight="700">1</text>
+  <rect x="240" y="234" width="80" height="36" fill="#fed7aa" stroke="#92400e"/><text x="280" y="258" text-anchor="middle" font-size="13" font-weight="700">1</text>
+  <rect x="320" y="234" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="360" y="258" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="400" y="234" width="80" height="36" fill="#fed7aa" stroke="#92400e"/><text x="440" y="258" text-anchor="middle" font-size="13" font-weight="700">1</text>
+  <rect x="480" y="234" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="570" y="234" width="80" height="36" fill="#b45309"/><text x="610" y="258" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">5</text>
+
+  <!-- Row 6: Resources -->
+  <text x="170" y="292" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#1a1a1a">Resources</text>
+  <rect x="160" y="274" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="240" y="274" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="280" y="298" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="320" y="274" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="360" y="298" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="400" y="274" width="80" height="36" fill="#fed7aa" stroke="#92400e"/><text x="440" y="298" text-anchor="middle" font-size="13" font-weight="700">1</text>
+  <rect x="480" y="274" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="570" y="274" width="80" height="36" fill="#b45309"/><text x="610" y="298" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">5</text>
+
+  <!-- Row 7: Risk -->
+  <text x="170" y="332" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#1a1a1a">Risk</text>
+  <rect x="160" y="314" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="240" y="314" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="280" y="338" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="320" y="314" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="360" y="338" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="400" y="314" width="80" height="36" fill="#fdba74" stroke="#92400e"/><text x="440" y="338" text-anchor="middle" font-size="13" font-weight="700">2</text>
+  <rect x="480" y="314" width="80" height="36" fill="#f9f6f0" stroke="#d6d3d1"/>
+  <rect x="570" y="314" width="80" height="36" fill="#b45309"/><text x="610" y="338" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">6</text>
+
+  <!-- Totals row -->
+  <rect x="160" y="362" width="400" height="36" fill="#1a1a1a"/>
+  <text x="170" y="386" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#92400e">TOTAL</text>
+  <text x="200" y="386" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#ffffff">2</text>
+  <text x="280" y="386" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#ffffff">13</text>
+  <text x="360" y="386" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#ffffff">12</text>
+  <text x="440" y="386" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#ffffff">11</text>
+  <text x="520" y="386" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#ffffff">2</text>
+  <rect x="570" y="362" width="80" height="36" fill="#fbbf24"/>
+  <text x="610" y="386" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">40</text>
+
+  <!-- Legend -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10">
+    <rect x="40" y="418" width="16" height="12" fill="#f9f6f0" stroke="#d6d3d1"/>
+    <text x="62" y="428" fill="#57534e">no processes</text>
+    <rect x="160" y="418" width="16" height="12" fill="#fed7aa" stroke="#92400e"/>
+    <text x="182" y="428" fill="#57534e">1 process</text>
+    <rect x="270" y="418" width="16" height="12" fill="#fdba74" stroke="#92400e"/>
+    <text x="292" y="428" fill="#57534e">2 processes</text>
+  </g>
+
+  <text x="360" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#44403c">Governance touches all five focus areas. Most other domains cluster in Planning, Executing, and Monitoring.</text>
+</svg>
+<div class="caption" style="margin-top: 14px; font-size: 13px; color: #57534e; font-family: sans-serif; text-align: center; font-style: italic;">Figure 4.2 — The 40 processes distributed across performance domains and focus areas (approximate distribution; consult the standard for exact counts).</div>
+</div>
+
+<h2 style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #92400e; font-weight: 700; margin: 44px 0 18px 0; padding-bottom: 10px; border-bottom: 1px solid #e7e5e4; font-family: sans-serif;">Key concepts</h2>
+
+<div class="concept-card" style="display: flex; gap: 22px; margin: 28px 0; padding-bottom: 28px;">
+  <div class="concept-number" style="font-family: sans-serif; font-size: 30px; font-weight: 800; color: #b45309; line-height: 1; min-width: 52px; letter-spacing: -0.02em;">01</div>
+  <div class="concept-body">
+    <h3 style="font-family: sans-serif; font-size: 19px; font-weight: 700; margin: 0 0 10px 0; color: #1a1a1a;">Processes are how the framework gets done</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.6;">A process in PMBOK 8 is a named unit of work with three parts: <em>inputs</em> (what you need to start), <em>tools and techniques</em> (how you do it), and <em>outputs</em> (what you produce). "Initiate Project or Phase" is a process; so is "Manage Project Knowledge." Without this kind of structure, advice like "do good stakeholder engagement" stays abstract. With it, you have something to assign, review, and improve.</p>
+  </div>
+</div>
+<div class="concept-card" style="display: flex; gap: 22px; margin: 28px 0; padding-bottom: 28px;">
+  <div class="concept-number" style="font-family: sans-serif; font-size: 30px; font-weight: 800; color: #b45309; line-height: 1; min-width: 52px; letter-spacing: -0.02em;">02</div>
+  <div class="concept-body">
+    <h3 style="font-family: sans-serif; font-size: 19px; font-weight: 700; margin: 0 0 10px 0; color: #1a1a1a;">Each process has a domain and a focus area</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.6;">Every process belongs to a performance domain (its topical home — Governance, Scope, Schedule, etc.) and a focus area (its temporal home — Initiating, Planning, Executing, M&amp;C, Closing). "Initiate Project or Phase" lives in Governance × Initiating. "Plan Sourcing Strategy" lives in Governance × Planning. The matrix in Figure 4.2 shows the full distribution.</p>
+  </div>
+</div>
+<div class="concept-card" style="display: flex; gap: 22px; margin: 28px 0; padding-bottom: 28px;">
+  <div class="concept-number" style="font-family: sans-serif; font-size: 30px; font-weight: 800; color: #b45309; line-height: 1; min-width: 52px; letter-spacing: -0.02em;">03</div>
+  <div class="concept-body">
+    <h3 style="font-family: sans-serif; font-size: 19px; font-weight: 700; margin: 0 0 10px 0; color: #1a1a1a;">Governance is the only domain with processes in every focus area</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.6;">Governance has roughly 9 processes spread across all five focus areas — the only domain that does. This is the structural reason governance "touches everything" (Lesson 3.1). Other domains concentrate their processes in Planning, Executing, and Monitoring &amp; Controlling. Few processes live in Initiating or Closing — those are mostly governance and stakeholder activities.</p>
+  </div>
+</div>
+<div class="concept-card" style="display: flex; gap: 22px; margin: 28px 0; padding-bottom: 28px;">
+  <div class="concept-number" style="font-family: sans-serif; font-size: 30px; font-weight: 800; color: #b45309; line-height: 1; min-width: 52px; letter-spacing: -0.02em;">04</div>
+  <div class="concept-body">
+    <h3 style="font-family: sans-serif; font-size: 19px; font-weight: 700; margin: 0 0 10px 0; color: #1a1a1a;">Processes are non-prescriptive — adapt them</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.6;">PMBOK 8 explicitly states that processes are not a checklist to be run linearly. They are units of work to be selected, tailored, and combined based on project context. A small adaptive project may meaningfully run 10 of the 40; a large regulated program may use all 40 in expanded form. Running all 40 on a small project is the v6 caricature PMBOK 8 was written to prevent.</p>
+  </div>
+</div>
+<div class="concept-card last" style="display: flex; gap: 22px; margin: 28px 0; padding-bottom: 28px; border-bottom: none;">
+  <div class="concept-number" style="font-family: sans-serif; font-size: 30px; font-weight: 800; color: #b45309; line-height: 1; min-width: 52px; letter-spacing: -0.02em;">05</div>
+  <div class="concept-body">
+    <h3 style="font-family: sans-serif; font-size: 19px; font-weight: 700; margin: 0 0 10px 0; color: #1a1a1a;">Use the matrix to find the gap</h3>
+    <p style="margin: 0; font-size: 16px; line-height: 1.6;">The matrix isn't just reference material — it's a diagnostic. On any project, you can mark which cells you're actively working and which you're not. Cells you're not touching are either (a) intentionally tailored out, or (b) a gap that will hurt later. The discipline is to know which — and to be able to justify each "not running" decision out loud. "We didn't bother" is not a justification under PMBOK 8.</p>
+  </div>
+</div>
+
+<h2 style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #92400e; font-weight: 700; margin: 44px 0 18px 0; padding-bottom: 10px; border-bottom: 1px solid #e7e5e4; font-family: sans-serif;">From the Standard</h2>
+
+<div class="example-block from-standard" style="background: #f5f1e8; border-left: 3px solid #92400e; padding: 22px 26px; margin: 24px 0;">
+  <div class="example-label" style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; color: #92400e; margin-bottom: 12px; font-family: sans-serif;">Why PMI reintroduced processes</div>
+  <p style="margin: 0 0 12px 0;">PMI's rationale, drawn from their public-comment process: PMBOK 7 was widely seen as too abstract for practical day-to-day use. Practitioners reported using v7 as a high-level reference and falling back on v6 for actual work guidance. PMI concluded that the operational layer — concrete units of work with structured inputs, techniques, and outputs — needed to come back.</p><p style="margin: 0;">The reduction from 49 (v6) to 40 (v8) reflects consolidation, not deletion: overlapping processes were merged, and processes that turned out in practice to be sub-steps of other processes were absorbed. The 40 are also explicitly non-prescriptive — PMI's framing throughout is that processes are tools to select from, not rituals to perform.</p>
+  <span class="attribution" style="display: block; margin-top: 14px; font-size: 12px; color: #78716c; font-family: sans-serif; font-style: italic;">Paraphrased from PMBOK 8 Appendix X5 (history of changes) and Section 1 commentary on processes.</span>
+</div>
+
+<h2 style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #92400e; font-weight: 700; margin: 44px 0 18px 0; padding-bottom: 10px; border-bottom: 1px solid #e7e5e4; font-family: sans-serif;">In your world</h2>
+
+<div class="example-block in-your-world" style="background: #f9f6f0; border-left: 3px solid #57534e; padding: 22px 26px; margin: 24px 0;">
+  <div class="example-label" style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; color: #57534e; margin-bottom: 12px; font-family: sans-serif;">Using the matrix for a project review</div>
+  <p style="margin: 0 0 12px 0;">A PM doing a six-month checkpoint on a customer portal rebuild printed the 7×5 matrix and walked the steering committee through it. For each of the 35 cells, she said either "actively running" or "intentionally not running, because X" or "gap — we should be doing something here."</p><p style="margin: 0 0 12px 0;">The exercise took 45 minutes. It surfaced four gaps the committee hadn't spotted in three months of status reports: no active stakeholder-engagement process in M&amp;C (engagement was happening only at gates), no risk identification in Initiating for new sub-phases (carrying old risks forward without refresh), no formal scope change-acceptance in Executing, and no knowledge transfer cell in Closing.</p><p style="margin: 0;">The committee added owners to three of the four cells the next week. The fourth they consciously left empty — small enough scale that the overhead wasn't worth it. Either decision is fine under PMBOK 8; what mattered was that it became a decision rather than a default.</p>
+</div>
+
+<div class="quiz-block"><div class="qe">Quiz</div><h3>Processes Quiz</h3><p class="qm">5 questions · tap an answer to check</p><div class="qq"><p class="qp">What three components define a PMBOK 8 process?</p><div class="qo"><button type="button" data-c="0">Stakeholders, scope, schedule</button><button type="button" data-c="1">Inputs, tools and techniques, outputs (ITTOs)</button><button type="button" data-c="0">Risks, budget, deliverables</button><button type="button" data-c="0">Initiation, planning, closure</button></div><div class="qx">A process has inputs (what you need to start), tools and techniques (how you do it), and outputs (what you produce). This is the same ITTO structure PMBOK 6 used — reintroduced in v8 after v7 removed it.</div></div><div class="qq"><p class="qp">Why did PMI reintroduce the process catalog in PMBOK 8?</p><div class="qo"><button type="button" data-c="0">To match ISO standards</button><button type="button" data-c="0">To make the book longer</button><button type="button" data-c="1">Because PMBOK 7 was widely seen as too abstract for day-to-day work; practitioners were falling back on v6 for actual guidance</button><button type="button" data-c="0">Because the principles weren&#x27;t working</button></div><div class="qx">PMBOK 7&#x27;s principle-only framing was too high-altitude for daily use. PMI brought back the operational layer — concrete units of work — while keeping v7&#x27;s principles and domains.</div></div><div class="qq"><p class="qp">How many processes does PMBOK 8 define, and how many did PMBOK 6 have?</p><div class="qo"><button type="button" data-c="1">40 in v8, 49 in v6 — consolidated, not all removed</button><button type="button" data-c="0">40 in v8, 40 in v6 — same count</button><button type="button" data-c="0">49 in v8, 12 in v6</button><button type="button" data-c="0">v8 has no processes</button></div><div class="qx">40 in v8, 49 in v6. The reduction reflects consolidation — overlapping processes merged, sub-processes absorbed — not deletion. The structural concept of a process unit is unchanged.</div></div><div class="qq"><p class="qp">Which performance domain has processes in all five Focus Areas?</p><div class="qo"><button type="button" data-c="0">Scope</button><button type="button" data-c="0">Stakeholders</button><button type="button" data-c="1">Governance — the only domain that does</button><button type="button" data-c="0">Risk</button></div><div class="qx">Governance is the only domain with processes in every focus area (~9 total). This is the structural reason governance &quot;touches everything.&quot; Other domains concentrate in Planning, Executing, and M&amp;amp;C.</div></div><div class="qq"><p class="qp">PMBOK 8 says the 40 processes are:</p><div class="qo"><button type="button" data-c="0">A mandatory checklist — run all 40 on every project</button><button type="button" data-c="1">Non-prescriptive — units of work to select, tailor, and combine based on project context</button><button type="button" data-c="0">Only for predictive projects</button><button type="button" data-c="0">Only for use by PMOs</button></div><div class="qx">PMI is explicit that processes are not a linear checklist. A small adaptive project may meaningfully run 10 of 40; a large regulated program may use all 40 in expanded form. Running all on a small project is the v6 caricature PMBOK 8 was designed to prevent.</div></div></div>
+<div class="bot-nav"><a href="11_focus_areas.html"><div class="dir">← Previous</div><div class="lbl">4.1 · Focus Areas</div></a><a href="13_tailoring.html" class="next"><div class="dir">Next →</div><div class="lbl">4.3 · Tailoring</div></a></div>
+</div>
+
+<div id="narration-text" hidden>The forty processes are where PMBOK 8 becomes operational. Each has inputs, tools and techniques, and outputs. PMBOK 7 removed the process catalog and practitioners missed it. Version 8 brought back forty processes — down from version 6&#x27;s forty-nine, through consolidation not deletion. Governance has nine processes spanning all five Focus Areas — the only domain that does. Stakeholders has seven. Risk and Scope each have six. Resources has five. Finance has four. Schedule has just three. Processes are non-prescriptive — a small project might run ten of forty; a large regulated project uses all forty. The matrix is also a diagnostic: cells you&amp;#39;re not touching are either intentionally tailored out or gaps that will hurt later.</div>
+<script>document.querySelectorAll('.qo button').forEach(function(b){b.addEventListener('click',function(){var q=this.closest('.qq');if(q.classList.contains('done'))return;var ok=this.dataset.c==='1';this.classList.add(ok?'correct':'incorrect');if(!ok){var r=q.querySelector('[data-c="1"]');if(r)r.classList.add('reveal');}q.querySelectorAll('.qo button').forEach(function(x){x.disabled=true;});var e=q.querySelector('.qx');if(e)e.classList.add('visible');q.classList.add('done');});});
+
+var ttsUtterance=null;
+function ttsPlay(){
+  speechSynthesis.cancel();
+  var t=document.getElementById('narration-text');
+  if(!t)return;
+  ttsUtterance=new SpeechSynthesisUtterance(t.textContent);
+  ttsUtterance.rate=parseFloat(document.getElementById('tts-speed').value)||1;
+  ttsUtterance.lang='en-US';
+  speechSynthesis.speak(ttsUtterance);
+}
+function ttsPause(){if(speechSynthesis.speaking){if(speechSynthesis.paused){speechSynthesis.resume();}else{speechSynthesis.pause();}}}
+function ttsStop(){speechSynthesis.cancel();}
+</script></body></html>
