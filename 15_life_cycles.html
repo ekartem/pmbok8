@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>5.2 Approaches &amp; Life Cycles — PMBOK 8 Course</title>
+<style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{max-width:820px;margin:0 auto;padding:32px 24px 80px;font-family:Georgia,'Iowan Old Style','Times New Roman',serif;color:#1a1a1a;line-height:1.65;font-size:17px;background:#fafaf9}
+.top-bar{display:flex;justify-content:space-between;align-items:center;padding:12px 0 24px;border-bottom:1px solid #e7e5e4;margin-bottom:28px;font-family:sans-serif;font-size:13px}.top-bar a{color:#b45309;text-decoration:none;font-weight:600}.top-bar a:hover{color:#92400e;text-decoration:underline}.top-bar .pos{color:#78716c}
+.tts-bar{display:flex;align-items:center;gap:10px;padding:12px 16px;margin:0 0 24px;background:#1a1a1a;border-radius:4px;font-family:sans-serif;font-size:13px}
+.tts-bar button{background:#2a2a2a;color:#fbbf24;border:1px solid #404040;border-radius:3px;padding:8px 14px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;transition:background .15s}.tts-bar button:hover{background:#404040}
+.tts-bar select{background:#2a2a2a;color:#e7e5e4;border:1px solid #404040;border-radius:3px;padding:6px 8px;font-family:inherit;font-size:12px}
+.tts-bar .tts-label{color:#a8a29e;font-size:12px}
+.bot-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:40px 0 0;padding:24px 0 0;border-top:2px solid #1a1a1a;font-family:sans-serif;font-size:14px}.bot-nav a{display:block;padding:14px 18px;background:#fff;border:1px solid #e7e5e4;border-radius:4px;text-decoration:none;color:#1a1a1a;transition:background .15s,border-color .15s}.bot-nav a:hover{background:#fefce8;border-color:#b45309}.bot-nav .dir{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#92400e;font-weight:700;margin-bottom:4px}.bot-nav .lbl{font-weight:600}.bot-nav .next{text-align:right}
+.quiz-block{background:#1a1a1a;color:#fff;border-radius:4px;padding:32px 28px;margin:48px 0 0;font-family:sans-serif}.quiz-block .qe{color:#fbbf24;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:6px}.quiz-block h3{color:#fff;font-size:20px;margin:0 0 6px;font-weight:700}.quiz-block .qm{color:#a8a29e;font-size:13px;margin:0 0 28px;font-style:italic}
+.qq{border-top:1px solid #404040;padding-top:24px;margin-top:24px}.qq:first-of-type{border-top:none;padding-top:0;margin-top:0}.qp{font-size:16px;margin:0 0 16px;font-weight:500;color:#fff;line-height:1.5}.qo{display:flex;flex-direction:column;gap:8px}.qo button{display:block;width:100%;text-align:left;padding:14px 18px;background:#2a2a2a;color:#e7e5e4;border:1px solid #404040;border-radius:3px;cursor:pointer;font-size:14.5px;font-family:inherit;line-height:1.45;transition:background .15s,border-color .15s}.qo button:hover:not(:disabled){background:#353535;border-color:#525252}.qo button.correct{background:#166534;border-color:#22c55e;color:#fff}.qo button.incorrect{background:#7f1d1d;border-color:#ef4444;color:#fff}.qo button.reveal{background:transparent;border:1px dashed #4ade80;color:#4ade80}.qo button:disabled{cursor:default}.qx{display:none;margin-top:18px;padding:16px 20px;background:#fef3c7;color:#1a1a1a;border-radius:3px;font-size:14.5px;line-height:1.6;border-left:3px solid #fbbf24;font-family:Georgia,serif}.qx.visible{display:block}
+@media(max-width:600px){body{padding:24px 16px 80px}.bot-nav{grid-template-columns:1fr}.quiz-block{padding:24px 18px}.tts-bar{flex-wrap:wrap}}.audio-bar{display:flex;align-items:center;gap:12px;padding:14px 18px;margin:0 0 24px;background:#1a1a1a;border-radius:4px;font-family:sans-serif;font-size:13px}
+.audio-bar audio{flex:1;min-width:0;height:36px}
+.audio-bar .audio-label{color:#fbbf24;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;white-space:nowrap}
+</style></head><body>
+<div class="top-bar"><a href="index.html">← Course home</a><span class="pos">Lesson 5.2 · 11 min</span></div>
+<div class="audio-bar">
+<span class="audio-label">▶ Narration</span>
+<audio controls preload="none" src="15_life_cycles.mp3">Your browser does not support audio playback.</audio>
+</div><div class="pmbok-lesson" style="max-width:740px;margin:0 auto;font-family:Georgia,'Iowan Old Style','Times New Roman',serif;color:#1a1a1a;line-height:1.65;font-size:17px;">
+<div class="pmbok-lesson" style="max-width:740px;margin:0 auto;font-family:Georgia,'Iowan Old Style','Times New Roman',serif;color:#1a1a1a;line-height:1.65;font-size:17px;">
+<div style="font-family:sans-serif;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#92400e;font-weight:700;margin-bottom:14px;">Module 5 · Lesson 5.2 · 11 min read</div>
+<div style="display:inline-block;font-family:sans-serif;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;color:#fff;background:#1a1a1a;padding:4px 10px;margin-bottom:14px;">Reference 2 of 3</div>
+<h1 style="font-size:34px;line-height:1.18;margin:0 0 28px;font-weight:700;">Development Approaches &amp; Life Cycles — predictive, adaptive, hybrid</h1>
+<div style="background:#fefce8;border-left:3px solid #b45309;padding:22px 26px;margin:26px 0;">
+<div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;color:#92400e;margin-bottom:10px;font-family:sans-serif;">Why this matters</div>
+<p style="margin:0;">Choosing the wrong development approach is the most expensive decision a PM can make at kickoff — and one of the hardest to reverse once the project is in motion. PMBOK 8 explicitly recognizes three broad approaches: predictive, adaptive, and hybrid. The choice is a tailoring decision, not a philosophical commitment. Most real projects are hybrid even when they don&#39;t call themselves that.</p></div>
+<div style="display:flex;gap:22px;margin:28px 0;padding-bottom:28px;border-bottom:1px solid #f0eeec;"><div style="font-family:sans-serif;font-size:30px;font-weight:800;color:#b45309;line-height:1;min-width:52px;">01</div><div><h3 style="font-family:sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#1a1a1a;">Predictive (waterfall)</h3><p style="margin:0;font-size:16px;line-height:1.6;">Scope is well-defined upfront and unlikely to change significantly. Planning is detailed before execution begins. Work follows a linear or near-linear sequence through the Focus Areas. Best fit: regulatory builds, construction, compliance projects where the end state is known and mandated. The risk: if requirements are wrong or change, the cost of correction is high and grows with time.</p></div></div>
+<div style="display:flex;gap:22px;margin:28px 0;padding-bottom:28px;border-bottom:1px solid #f0eeec;"><div style="font-family:sans-serif;font-size:30px;font-weight:800;color:#b45309;line-height:1;min-width:52px;">02</div><div><h3 style="font-family:sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#1a1a1a;">Adaptive (agile)</h3><p style="margin:0;font-size:16px;line-height:1.6;">Scope emerges through discovery. Work is delivered in short iterations (sprints, releases) with continuous stakeholder feedback. Planning is rolling-wave — detailed for the near term, sketched for the long term. Best fit: product development, innovation, anything where learning is faster than planning. Includes Scrum, Kanban, XP, and other frameworks. The risk: scope sprawl if "adaptive" becomes "no boundaries."</p></div></div>
+<div style="display:flex;gap:22px;margin:28px 0;padding-bottom:28px;border-bottom:1px solid #f0eeec;"><div style="font-family:sans-serif;font-size:30px;font-weight:800;color:#b45309;line-height:1;min-width:52px;">03</div><div><h3 style="font-family:sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#1a1a1a;">Hybrid</h3><p style="margin:0;font-size:16px;line-height:1.6;">Combines predictive and adaptive elements — typically predictive governance and planning with adaptive execution, or predictive for well-understood components and adaptive for discovery-heavy ones. Most enterprise projects are hybrid in practice. The risk: incoherence if the two approaches aren't consciously integrated (running "agile" sprints inside a rigid waterfall governance model is theatre, not hybrid).</p></div></div>
+<div style="display:flex;gap:22px;margin:28px 0;padding-bottom:28px;border-bottom:1px solid #f0eeec;"><div style="font-family:sans-serif;font-size:30px;font-weight:800;color:#b45309;line-height:1;min-width:52px;">04</div><div><h3 style="font-family:sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#1a1a1a;">How to choose</h3><p style="margin:0;font-size:16px;line-height:1.6;">Four factors drive the decision. Requirements stability: stable → predictive; evolving → adaptive. Stakeholder availability: available for continuous feedback → adaptive; available only at gates → predictive. Risk tolerance: high → adaptive allows faster learning; low → predictive provides more control. Organizational culture: command-and-control favors predictive; empowerment-oriented favors adaptive. Assess all four; the one in tension usually decides.</p></div></div>
+<div style="display:flex;gap:22px;margin:28px 0;"><div style="font-family:sans-serif;font-size:30px;font-weight:800;color:#b45309;line-height:1;min-width:52px;">05</div><div><h3 style="font-family:sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#1a1a1a;">Life cycle ≠ approach</h3><p style="margin:0;font-size:16px;line-height:1.6;">The life cycle is the series of phases a project passes through. The development approach is how work gets done within those phases. A project can have a predictive life cycle (sequential phases) with adaptive execution within the build phase. PMBOK 8 treats these as separate decisions — don&#39;t conflate them.</p></div></div>
+<div style="background:#f5f1e8;border-left:3px solid #92400e;padding:22px 26px;margin:24px 0;"><div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;color:#92400e;margin-bottom:12px;font-family:sans-serif;">From the Standard</div><p style="margin:0;font-size:16px;">PMBOK 8's Standard (Section 4) and the Guide's tailoring section both emphasize that development approach selection is a tailoring decision, not a one-size-fits-all prescription. The Standard describes predictive, adaptive, and hybrid life cycles, and notes that the choice should be revisited at phase boundaries if conditions change.</p><span style="display:block;margin-top:14px;font-size:12px;color:#78716c;font-family:sans-serif;font-style:italic;">Paraphrased from PMBOK 8 Standard § 4 and Guide § 3.</span></div>
+<div style="background:#f9f6f0;border-left:3px solid #57534e;padding:22px 26px;margin:24px 0;"><div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;color:#57534e;margin-bottom:12px;font-family:sans-serif;">In your world</div><p style="margin:0 0 12px;font-size:16px;">A PM running a platform migration defaulted to predictive because "migrations are waterfall." Six months in, requirements from the target platform's API kept changing with each vendor release. The team was spending more time on rebaselining than building.</p><p style="margin:0;font-size:16px;">She switched the integration layer to adaptive (two-week sprints, evolving backlog) while keeping the data migration itself predictive (fixed schema, known transforms). The hybrid approach cut rework by roughly 40% — because each component got the approach that matched its uncertainty profile, not the one the project defaulted to at kickoff.</p>
+
+<div class="diagram" style="margin:36px 0;padding:24px 20px 18px;background:#fff;border:1px solid #e7e5e4;border-radius:4px;">
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three development approaches: predictive, adaptive, hybrid" style="width:100%;height:auto;display:block;">
+<text x="360" y="24" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="11" letter-spacing="1.6" fill="#92400e" font-weight="700">THREE DEVELOPMENT APPROACHES</text>
+<g font-family="-apple-system,sans-serif">
+<rect x="20" y="50" width="215" height="350" fill="#fef3c7" stroke="#b45309" stroke-width="1.5" rx="3"/>
+<text x="128" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">PREDICTIVE</text>
+<text x="128" y="96" text-anchor="middle" font-size="11" fill="#78716c">(Waterfall)</text>
+<line x1="40" y1="108" x2="215" y2="108" stroke="#b45309" stroke-width="0.5"/>
+<text x="35" y="130" font-size="11" fill="#44403c">Scope defined upfront</text>
+<text x="35" y="150" font-size="11" fill="#44403c">Sequential phases</text>
+<text x="35" y="170" font-size="11" fill="#44403c">Detailed plan before</text>
+<text x="35" y="185" font-size="11" fill="#44403c">execution begins</text>
+<text x="35" y="210" font-size="11" fill="#44403c">End state known</text>
+<line x1="40" y1="228" x2="215" y2="228" stroke="#b45309" stroke-width="0.5"/>
+<text x="35" y="250" font-size="10" font-weight="700" fill="#92400e">BEST FIT:</text>
+<text x="35" y="268" font-size="11" fill="#44403c">Stable requirements</text>
+<text x="35" y="286" font-size="11" fill="#44403c">Regulatory / compliance</text>
+<text x="35" y="304" font-size="11" fill="#44403c">Construction</text>
+<line x1="40" y1="320" x2="215" y2="320" stroke="#b45309" stroke-width="0.5"/>
+<text x="35" y="342" font-size="10" font-weight="700" fill="#92400e">RISK:</text>
+<text x="35" y="360" font-size="11" fill="#44403c">Late-stage rework</text>
+<text x="35" y="378" font-size="11" fill="#44403c">is expensive</text>
+
+<rect x="252" y="50" width="215" height="350" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5" rx="3"/>
+<text x="360" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">ADAPTIVE</text>
+<text x="360" y="96" text-anchor="middle" font-size="11" fill="#78716c">(Agile / Scrum / Kanban)</text>
+<line x1="272" y1="108" x2="447" y2="108" stroke="#16a34a" stroke-width="0.5"/>
+<text x="267" y="130" font-size="11" fill="#44403c">Scope emerges through</text>
+<text x="267" y="148" font-size="11" fill="#44403c">discovery</text>
+<text x="267" y="170" font-size="11" fill="#44403c">Short iterations (2-4 wk)</text>
+<text x="267" y="190" font-size="11" fill="#44403c">Continuous feedback</text>
+<text x="267" y="210" font-size="11" fill="#44403c">Rolling-wave planning</text>
+<line x1="272" y1="228" x2="447" y2="228" stroke="#16a34a" stroke-width="0.5"/>
+<text x="267" y="250" font-size="10" font-weight="700" fill="#166534">BEST FIT:</text>
+<text x="267" y="268" font-size="11" fill="#44403c">Evolving requirements</text>
+<text x="267" y="286" font-size="11" fill="#44403c">Product development</text>
+<text x="267" y="304" font-size="11" fill="#44403c">Innovation / R&amp;D</text>
+<line x1="272" y1="320" x2="447" y2="320" stroke="#16a34a" stroke-width="0.5"/>
+<text x="267" y="342" font-size="10" font-weight="700" fill="#166534">RISK:</text>
+<text x="267" y="360" font-size="11" fill="#44403c">Scope sprawl if</text>
+<text x="267" y="378" font-size="11" fill="#44403c">"adaptive" = no limits</text>
+
+<rect x="484" y="50" width="215" height="350" fill="#fed7aa" stroke="#92400e" stroke-width="1.5" rx="3"/>
+<text x="592" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#7c2d12">HYBRID</text>
+<text x="592" y="96" text-anchor="middle" font-size="11" fill="#78716c">(Most enterprise projects)</text>
+<line x1="504" y1="108" x2="679" y2="108" stroke="#92400e" stroke-width="0.5"/>
+<text x="499" y="130" font-size="11" fill="#44403c">Predictive governance</text>
+<text x="499" y="148" font-size="11" fill="#44403c">+ adaptive execution</text>
+<text x="499" y="170" font-size="11" fill="#44403c">Or: predictive for known</text>
+<text x="499" y="188" font-size="11" fill="#44403c">components, adaptive for</text>
+<text x="499" y="206" font-size="11" fill="#44403c">discovery-heavy ones</text>
+<line x1="504" y1="228" x2="679" y2="228" stroke="#92400e" stroke-width="0.5"/>
+<text x="499" y="250" font-size="10" font-weight="700" fill="#7c2d12">BEST FIT:</text>
+<text x="499" y="268" font-size="11" fill="#44403c">Mixed requirements</text>
+<text x="499" y="286" font-size="11" fill="#44403c">Large teams, complex</text>
+<text x="499" y="304" font-size="11" fill="#44403c">Integration projects</text>
+<line x1="504" y1="320" x2="679" y2="320" stroke="#92400e" stroke-width="0.5"/>
+<text x="499" y="342" font-size="10" font-weight="700" fill="#7c2d12">RISK:</text>
+<text x="499" y="360" font-size="11" fill="#44403c">Incoherence if the two</text>
+<text x="499" y="378" font-size="11" fill="#44403c">approaches aren&#x27;t integrated</text>
+</g>
+</svg>
+<div style="margin-top:14px;font-size:13px;color:#57534e;font-family:sans-serif;text-align:center;font-style:italic;">The choice is a tailoring decision driven by requirements stability, stakeholder availability, risk tolerance, and organizational culture.</div>
+</div>
+<div class="quiz-block"><div class="qe">Quiz</div><h3>Approaches &amp; Life Cycles Quiz</h3><p class="qm">5 questions · tap an answer to check</p><div class="qq"><p class="qp">Which development approach works best when scope is well-defined and unlikely to change?</p><div class="qo"><button type="button" data-c="0">Adaptive</button><button type="button" data-c="1">Predictive</button><button type="button" data-c="0">Hybrid</button><button type="button" data-c="0">None — PMBOK 8 doesn&amp;#39;t recommend any</button></div><div class="qx">Predictive works when scope is stable. Planning is detailed upfront; execution follows the plan.</div></div><div class="qq"><p class="qp">Most real enterprise projects are:</p><div class="qo"><button type="button" data-c="0">Purely predictive</button><button type="button" data-c="0">Purely adaptive</button><button type="button" data-c="1">Hybrid in practice, even when they don&amp;#39;t call themselves that</button><button type="button" data-c="0">None of the above</button></div><div class="qx">Most projects combine predictive and adaptive elements. The key is integrating them consciously rather than defaulting.</div></div><div class="qq"><p class="qp">Which four factors drive the choice of development approach?</p><div class="qo"><button type="button" data-c="0">Budget, headcount, timeline, tools</button><button type="button" data-c="1">Requirements stability, stakeholder availability, risk tolerance, organizational culture</button><button type="button" data-c="0">Sponsor preference, team size, industry, geography</button><button type="button" data-c="0">Complexity, duration, cost, quality</button></div><div class="qx">Requirements stability, stakeholder availability, risk tolerance, and organizational culture are the four drivers PMBOK 8 emphasizes.</div></div><div class="qq"><p class="qp">A project uses predictive governance and planning but adaptive execution (sprints). This is:</p><div class="qo"><button type="button" data-c="0">Incorrect — you must pick one approach</button><button type="button" data-c="1">A hybrid approach — combining predictive and adaptive elements consciously</button><button type="button" data-c="0">Purely agile</button><button type="button" data-c="0">Purely waterfall</button></div><div class="qx">This is hybrid. The key is that both elements are consciously integrated, not contradicting each other.</div></div><div class="qq"><p class="qp">Life cycle and development approach are:</p><div class="qo"><button type="button" data-c="0">The same thing</button><button type="button" data-c="1">Separate decisions — the life cycle is the series of phases; the approach is how work gets done within phases</button><button type="button" data-c="0">Only relevant for predictive projects</button><button type="button" data-c="0">Defined by the PMO, not the PM</button></div><div class="qx">A project can have a predictive life cycle with adaptive execution within a specific phase. Don&#x27;t conflate them.</div></div></div>
+<div class="bot-nav"><a href="14_value_delivery.html"><div class="dir">← Previous</div><div class="lbl">5.1 · Value Delivery System</div></a><a href="16_toolbox.html" class="next"><div class="dir">Next →</div><div class="lbl">5.3 · The Toolbox: Inputs, Outputs &amp; Techniques</div></a></div>
+</div>
+
+<div id="narration-text" hidden>This lesson covers development approaches and project life cycles. PMBOK 8 recognizes three broad approaches: predictive, adaptive, and hybrid. Predictive — also called waterfall — works when scope is well-defined and unlikely to change. Planning is done upfront; execution follows the plan. Adaptive — including Scrum, Kanban, and other agile methods — works when scope emerges through discovery. Work is delivered in short iterations with continuous feedback. Hybrid combines both — typically predictive for well-understood components and adaptive for discovery-heavy ones. The choice of approach is a tailoring decision driven by requirements stability, stakeholder availability, risk tolerance, and organizational culture. Many real projects are hybrid even when they don&amp;#39;t call themselves that.</div>
+<script>document.querySelectorAll('.qo button').forEach(function(b){b.addEventListener('click',function(){var q=this.closest('.qq');if(q.classList.contains('done'))return;var ok=this.dataset.c==='1';this.classList.add(ok?'correct':'incorrect');if(!ok){var r=q.querySelector('[data-c="1"]');if(r)r.classList.add('reveal');}q.querySelectorAll('.qo button').forEach(function(x){x.disabled=true;});var e=q.querySelector('.qx');if(e)e.classList.add('visible');q.classList.add('done');});});
+
+var ttsUtterance=null;
+function ttsPlay(){
+  speechSynthesis.cancel();
+  var t=document.getElementById('narration-text');
+  if(!t)return;
+  ttsUtterance=new SpeechSynthesisUtterance(t.textContent);
+  ttsUtterance.rate=parseFloat(document.getElementById('tts-speed').value)||1;
+  ttsUtterance.lang='en-US';
+  speechSynthesis.speak(ttsUtterance);
+}
+function ttsPause(){if(speechSynthesis.speaking){if(speechSynthesis.paused){speechSynthesis.resume();}else{speechSynthesis.pause();}}}
+function ttsStop(){speechSynthesis.cancel();}
+</script></body></html>
